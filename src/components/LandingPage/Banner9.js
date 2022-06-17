@@ -1,31 +1,24 @@
 // > styled-components
 import styled from 'styled-components';
 
-function Banner5(){
+function Banner8(){
   return(
     <>
       <Container>
         <BannerWrapper>
-          <img src="img/banner7.jpg" alt="" />
+          <img src="img/banner9.jpg" alt="" />
           <ButtonWrapper>
-            <h1>
-              CONVERSE X <br />
-              COMME <br />
-              des GARÇONS
-            </h1>
             <p>
-              두 패션 아이콘의 콜라보레이션 <br />
-              컨버스 X 꼼데가르송 컬렉션 재입고
+              꾸준히 사랑받은 컨버스 베스트 상품들을 만나보세요.
             </p>
-            <button>더 알아보기</button>
+            <a href="https://www.converse.co.kr/shops/STEADYSELLER_2022.html">더 알아보기</a>
           </ButtonWrapper>
         </BannerWrapper>
       </Container>
     </>
   )
 }
-
-export default Banner5;
+export default Banner8;
 
 const Container = styled.div`
   width: 1440px;
@@ -53,31 +46,25 @@ const ButtonWrapper = styled.div`
   position: absolute;
   left: 0;
   top: 0;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
-  padding: 56.234px;
+  padding: 57.313px;
   text-align: left;
 
-  h1 {
-    font-size: 50px;
-    font-weight: bold;
-    line-height: 1.25;
-    letter-spacing: -0.01em;
-    margin-top: 60px;
-    margin-bottom: 12px;
-    color: #fff;
-  }
   p {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
     letter-spacing: -0.02em;
+    margin-top: 88px;
     margin-bottom: 12px;
     color: #fff;
   }
 
-  button {
+  a {
     display: block;
     min-width: 180px;
     font-size: 14px;

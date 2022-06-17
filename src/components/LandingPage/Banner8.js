@@ -1,24 +1,29 @@
 // > styled-components
 import styled from 'styled-components';
 
-function Banner8(){
+function Banner6(){
   return(
     <>
       <Container>
         <BannerWrapper>
-          <img src="img/banner10.jpg" alt="" />
+          <img src="img/banner8-1.jpg" alt="banner8-1" />
+          <img src="img/banner8-2.jpg" alt="banner8-2" />
           <ButtonWrapper>
+            <h1>
+              SUMMER TEE <br />
+            </h1>
             <p>
-              꾸준히 사랑받은 컨버스 베스트 상품들을 만나보세요.
+              여름에 가장 먼저 떠오르는 편안한 핏의 티셔츠로 데일리룩을 완성해 보세요
             </p>
-            <button>더 알아보기</button>
+            <a href="https://www.converse.co.kr/category/apparel-accessory/24/?keyword=&search_form%5Boption_data%5D%5B%5D=custom_2%3D%EC%83%81%EC%9D%98&cate_no=">더 알아보기</a>
           </ButtonWrapper>
         </BannerWrapper>
       </Container>
     </>
   )
 }
-export default Banner8;
+
+export default Banner6;
 
 const Container = styled.div`
   width: 1440px;
@@ -45,26 +50,31 @@ const BannerWrapper = styled.div`
 const ButtonWrapper = styled.div`
   position: absolute;
   left: 0;
-  top: 0;
-  height: 100%;
+  bottom: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
-  padding: 57.313px;
+  padding: 28.797px;
   text-align: left;
 
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    margin-bottom: 12px;
+    color: #fff;
+  }
   p {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
     letter-spacing: -0.02em;
-    margin-top: 88px;
     margin-bottom: 12px;
     color: #fff;
   }
 
-  button {
+  a {
     display: block;
     min-width: 180px;
     font-size: 14px;

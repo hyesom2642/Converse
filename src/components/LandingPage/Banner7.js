@@ -1,27 +1,31 @@
 // > styled-components
 import styled from 'styled-components';
 
-function Banner7(){
+function Banner5(){
   return(
     <>
       <Container>
         <BannerWrapper>
-          <img src="img/banner9.jpg" alt="" />
+          <img src="img/banner7.jpg" alt="" />
           <ButtonWrapper>
             <h1>
-              SUMMER SALE
+              CONVERSE X <br />
+              COMME <br />
+              des GARÇONS
             </h1>
             <p>
-              다양한 컨버스 제품을 최대 30% 할인된 가격에 만나보세요
+              두 패션 아이콘의 콜라보레이션 <br />
+              컨버스 X 꼼데가르송 컬렉션 재입고
             </p>
-            <button>더 알아보기</button>
+            <a href="https://www.converse.co.kr/limited/cdg_collection.html">더 알아보기</a>
           </ButtonWrapper>
         </BannerWrapper>
       </Container>
     </>
   )
 }
-export default Banner7;
+
+export default Banner5;
 
 const Container = styled.div`
   width: 1440px;
@@ -47,20 +51,20 @@ const BannerWrapper = styled.div`
 
 const ButtonWrapper = styled.div`
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  left: 0;
+  top: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   padding: 56.234px;
-  text-align: center;
+  text-align: left;
 
   h1 {
     font-size: 50px;
     font-weight: bold;
     line-height: 1.25;
     letter-spacing: -0.01em;
+    margin-top: 60px;
     margin-bottom: 12px;
     color: #fff;
   }
@@ -73,7 +77,7 @@ const ButtonWrapper = styled.div`
     color: #fff;
   }
 
-  button {
+  a {
     display: block;
     min-width: 180px;
     font-size: 14px;

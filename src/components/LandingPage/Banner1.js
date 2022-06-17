@@ -7,14 +7,14 @@ function Banner1(){
       <Container>
         <BannerWrapper>
           <img src="img/banner1.jpg" alt="" />
-          <img src="img/banner2.jpg" alt="" />
+          <img src="img/banner1-1.jpg" alt="" />
           <div className="bannerInfo">
             <h1>CONVERSE X Stüssy</h1>
             <p>
               1990년대를 장악했던 블랙 헴프 척에서 영감을 받아,<br />
               스투시가 남부 캘리포니아 감성을 담은 독특한 원스타와 척 70를 선보입니다. 
             </p>
-            <button>22.06.17 10AM 출시 예정</button>
+            <a href="https://www.converse.co.kr/limited/stussy.html">더 알아보기</a>
           </div>
         </BannerWrapper>
       </Container>
@@ -72,17 +72,17 @@ const BannerWrapper = styled.div`
       color: #fff;
       margin-bottom: 32px;
     }
-    button {
+    a {
       display: block;
       min-width: 180px;
       font-size: 14px;
       font-weight: bold;
-      color: #fff;
       border: 1px solid #000;
       background-color: #000;
       padding: 15px 20px;
       text-align: center;
       transition: all 0.3s ease-in-out;
+      color: #fff;
   
       &:hover {
         opacity: 0.6;
