@@ -11,73 +11,52 @@ function Explore(){
         <Title>
           <h1>Explore Converse</h1>
         </Title>
-        {/* <CategoryWrapper>
-          <CategoryLeft>
+        <ContentWrapper>
+          <LeftContent>
             <ul>
               <li>
-                <BsArrowRight className="icon" />
-                <a href="/">
-                  여성<br />
-                  전체보기
-                </a>
+                <BsArrowRight className="arrow-icon" />
+                <a href="https://www.converse.co.kr/category/shoes/23/?keyword=&search_form%5Boption_data%5D%5B%5D=custom_1%3D%EC%97%AC%EC%84%B1&cate_no=">여성<br/>전체보기</a>
               </li>
               <li>
-                <BsArrowRight className="icon" />
-                <a href="/">
-                  남성<br />
-                  전체보기
-                </a>
+                <BsArrowRight className="arrow-icon" />
+                <a href="https://www.converse.co.kr/category/shoes/23/?keyword=&search_form%5Boption_data%5D%5B%5D=custom_1%3D%EB%82%A8%EC%84%B1&cate_no=">남성<br/>전체보기</a>
               </li>
               <li>
-                <BsArrowRight className="icon" />
-                <a href="/">
-                  아동<br />
-                  전체보기
-                </a>
+              <BsArrowRight className="arrow-icon" />
+                <a href="https://www.converse.co.kr/category/kids-shoes/25/">아동<br/>전체보기</a>
               </li>
             </ul>
-          </CategoryLeft>
-          <CategoryRight>
-          <ul>
+          </LeftContent>
+          <RightContent>
+            <ul>
               <li>
-                <BsArrowRight />
-                <a href="/">
-                  척 70
-                </a>
+                <BsArrowRight className="arrow-icon" />
+                <a href="https://www.converse.co.kr/category/%EC%B2%99-70/44/">척 70</a>
               </li>
               <li>
-                <BsArrowRight />
-                <a href="/">
-                  클래식 척
-                </a>
+                <BsArrowRight className="arrow-icon" />
+                <a href="https://www.converse.co.kr/category/%ED%81%B4%EB%9E%98%EC%8B%9D-%EC%B2%99/58/">클래식 척</a>
               </li>
               <li>
-                <BsArrowRight />
-                <a href="/">
-                  척 테일러 올스타
-                </a>
+                <BsArrowRight className="arrow-icon" />
+                <a href="https://www.converse.co.kr/category/%EC%B2%99%ED%85%8C%EC%9D%BC%EB%9F%AC-%EC%98%AC%EC%8A%A4%ED%83%80/43/">척테일러 올스타</a>
               </li>
               <li>
-                <BsArrowRight />
-                <a href="/">
-                  한정판
-                </a>
+                <BsArrowRight className="arrow-icon" />
+                <a href="https://www.converse.co.kr/product/launchcalendar.html?cate_no=49">한정판</a>
               </li>
               <li>
-                <BsArrowRight />
-                <a href="/">
-                  온라인 온리
-                </a>
+                <BsArrowRight className="arrow-icon" />
+                <a href="https://www.converse.co.kr/product/list.html?cate_no=56">온라인 온리</a>
               </li>
               <li>
-                <BsArrowRight />
-                <a href="/">
-                  빅 사이즈
-                </a>
+                <BsArrowRight className="arrow-icon" />
+                <a href="https://www.converse.co.kr/category/shoes/23/?keyword=&search_form%5Boption_data%5D%5B%5D=size%253D295&search_form%5Boption_data%5D%5B%5D=size%253D300&cate_no=">빅 사이즈</a>
               </li>
             </ul>
-          </CategoryRight>
-        </CategoryWrapper> */}
+          </RightContent>
+        </ContentWrapper>
       </Container>
     </>
   )
@@ -104,53 +83,100 @@ const Title = styled.div`
   }
 `;
 
-const CategoryWrapper = styled.div`
+const ContentWrapper = styled.div`
   display: flex;
+  align-items: center;
+  height: 157px;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
-  height: 160px;
-  margin-bottom: 50px;
+
+  li:hover {
+    opacity: 0.8;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
 `;
-const CategoryLeft = styled.div`
-  height: 160px;
+
+const LeftContent = styled.div`
+  min-width: 50%;
+  height: 100%;
 
   ul {
-    height: 100%;
     display: flex;
-    
-    .icon {
-      font-size: 24px;
-      font-weight: bold;
-    }
-    
+    justify-content: center;
+    height: 100%;
+
     li {
-      width: 240px;
+      position: relative;
+      display: flex;
+      width: 33.3%;
       height: 100%;
-      font-size: 24px;
-      font-weight: bold;
-      line-height: 1.1;
+      border-left: 1px solid #000;
       padding: 30px 20px 30px 60px;
-      border-right: 1px solid #000;
+
+      .arrow-icon {
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      &:first-child {
+        border: 0;
+      }
 
       a {
+        display: block;
+        height: 100%;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.1;
+        color: #000;
       }
     }
   }
 `;
-const CategoryRight = styled.div`
+
+const RightContent = styled.div`
+  height: 100%;
+
   ul {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    height: 100%;
 
     li {
-      width: 240px;
-      height: 80px;
+      position: relative;
+      width: 33.3%;
+      height: 50%;
       padding: 30px 20px 30px 60px;
-      border-right: 1px solid #000;
-      border-bottom: 1px solid #000;
+      border-left: 1px solid #000;
+
+      &:nth-child(-n+3) {
+        border-bottom: 1px solid #000;
+      }
+
+      .arrow-icon {
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.1;
+        color: #000;
+      }
     }
   }
 `;
