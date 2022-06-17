@@ -6,6 +6,7 @@ import './App.css';
 // > components 
 import Navbar from './components/Navbar/Navbar';
 import LandingPage from './components/LandingPage/LandingPage';
+import Support from './components/Support/Support';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <>
       <Navbar />
       <LandingPage />
+      <Support />
       <Footer />
     </>
   );
