@@ -43,10 +43,10 @@ function Service(){
                 </a>
               </li>
               <li>
-                <a href="/">
+                <a href="https://www.facebook.com/converse.kr" target="_blank">
                   <FaFacebookF className="icon-link" />
                 </a>
-                <a href="/">
+                <a href="https://www.instagram.com/converse_kr/" target="_blank">
                   <FaInstagram className="icon-link" />
                 </a>
                 <h1>Follow Us</h1>
